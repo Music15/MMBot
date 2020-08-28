@@ -631,7 +631,7 @@ client.on('message', message => {
 
 `
   if(message.content === prefix + 'help') {
-            message.delete(1000)
+            message.delete(1)
     let e = '\`Commands have been sent private\`'
 	  message.reply(e).then(m => m.delete(10000))
 	  message.author.send(helplist).catch(error => message.reply('** Open your private :negative_squared_cross_mark:**'))
